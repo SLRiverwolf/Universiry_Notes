@@ -12,6 +12,7 @@
 - Total cost of a step = Input cost + Output Cost
 - output cost of the last step is always 0
 - Can't keep part of the table in the memory. Either the whole thing on memory or on disk cache
+- Output of the previous step should be input to the next step. Can't save the output of an operation and use it later.
 - Query Optimizor in a relational DBMS![[query optimization workings.jpg]]
 
 - [[Tutorial 06 - Query Optimization.pdf]]  and answers at.

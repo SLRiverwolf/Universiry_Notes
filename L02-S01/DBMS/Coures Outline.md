@@ -4,7 +4,7 @@
 - [[Concurrency control]]
 - [[Object Relational Databases]]
 - [[File Organization]]
-- [[Indexing and Hashing]]
+- [[File Indexing and Hashing]]
 - [[Database Security]]
 - [[Backup and Recovery]]
 - [[Non-relational Datamodels]]

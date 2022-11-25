@@ -61,11 +61,11 @@
 - Deadlock prevention algorithms:
 	Older transactions have low timestamps compared to youger ones.
 	Assume Ti tries to lock an item X but not able to, because another transaction Tj is holding the item with an incompatible lock,
-		- lock all the items it needs in advance. if any of the items cannot be obtained, none of the items are locked. Rather, the transaction waits and then tries again to lock all the items it needs.(not practical)
-		- Wait-die scheme:
+	- lock all the items it needs in advance. if any of the items cannot be obtained, none of the items are locked. Rather, the transaction waits and then tries again to lock all the items it needs.(not practical)
+	- Wait-die scheme:
 				If Ti=older --> wait
 				else if Ti=younger --> die(restart later with the same timestamp)
-		- Wound-Wait scheme:
+	- Wound-Wait scheme:
 				If Ti=older --> Wound Tj(abort Tj and restart later with same timestamp)
 				else if Ti=younger --> wait
 		(in both cases, a younger transaction is aborted)
